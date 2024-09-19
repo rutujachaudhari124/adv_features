@@ -1,0 +1,10 @@
+name: Main Python Workflow
+ 
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the 'main' branch
+ 
+jobs:
+  call-reusable-python-workflow:
+    uses: ./.github/workflows/reusable-python-workflow.yml  # Reference the reusable Python workflow
